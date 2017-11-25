@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Moving Companion</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <header>
+        <h5 id="about" class="greeting textShadowEffect">Move Planner App</h5>
+        <form id="form-container" class="form-container">
+            <label for="street" class="textShadowEffect">Street: </label>
+            <input type="text" id="street" value="Times Square" class="formFieldEffect">
+
+            <label for="city" class="textShadowEffect">City: </label>
+            <input type="text" id="city" value="New York City" class="formFieldEffect">
+            
+            <button id="submit-btn" class="formFieldEffect">Submit</button>
+        </form>
+
+        <hr>
+
+        <h2 id="greeting" class="greeting textShadowEffect">Where do you want to live?</h2>
+    </header>
+
+
+    <div class="row">
+
+        <div class="col-xs-8">
+            <div class="nytimes-container row">
+                <div class="col-xs-12">
+                    <h3 id="nytimes-header" class="col-xs-12">
+                        Get Articles from "New York Times" for your new place!
+                    </h3>
+                </div>
+                
+
+                <ul id="nytimes-articles" class="article-list row">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+            </div>
+        </div>
+
+        <div class="col-xs-3 col-xs-offset-1">
+            <div class="wikipedia-container row" >
+                <h3 id="wikipedia-header" class="col-xs-12">Relevant Wikipedia Links</h3>
+                <ul id="wikipedia-links" class="row">Type in an address above and find relevant Wikipedia articles here!</ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="overlay">
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>
